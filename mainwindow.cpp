@@ -26,7 +26,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QString file = QFileDialog::getOpenFileName(this, tr("Open File"), "/Users", "Wave Audio (*.wav)");
+    QString file = QFileDialog::getSaveFileName(this, tr("Open File"), "/Users", "Wave Audio (*.wav)");
     ui->EncodeOut->setText(file);
 }
 
